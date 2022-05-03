@@ -1,0 +1,87 @@
+:root {
+  --bgColor: #02021b;
+  --blueColor: #004471;
+  --purpleColor: #7e006b;
+  --redColor: #960037;
+  --greenColor: rgb(0, 231, 111);
+  --grayColor: rgb(84, 84, 84);
+  --whiteColor: antiquewhite;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.card {
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 3px solid var(--purpleColor);
+  border-radius: 20px;
+  padding: 1rem;
+  color: var(--bgColor);
+  background-color: #7e006b29;
+}
+.card h2 {
+  margin: 2rem 0;
+}
+
+.number-group {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3rem 0;
+  width: 100%;
+}
+.number-group input {
+  border: 2px solid var(--grayColor);
+  padding: .7rem;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 16%;
+  caret-color: var(--redColor);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.btn{
+  padding: .5rem 2rem;
+  border-radius: 10px;
+  border: 2px solid var(--purpleColor);
+  background-color: transparent;
+  color: var(--purpleColor);
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  margin: 1rem 0 2rem 0;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+.btn:hover{
+  color: var(--whiteColor);
+  background-color: var(--purpleColor);
+}
+.footer {
+  background-color: var(--purpleColor);
+  padding: 1rem;
+  border-radius: 10px;
+  color: var(--whiteColor);
+  margin: 1rem 0;
+}
